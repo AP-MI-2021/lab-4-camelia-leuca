@@ -113,8 +113,8 @@ def afisare_meniu():
     print("2.Afișarea listei după eliminarea numerelor prime din listă")
     print("3.Să se afișeze dacă media aritmetică a numerelor este mai mare decât un număr n dat.")
     print("4.Afișarea listei obținută prin adăugarea după fiecare element numărul de divizori proprii ai elementului.")
-    print("5. Afișarea listei obținute din lista inițială în care numerele sunt înlocuite cu un tuplu în care peprima/"
-          " poziție este numărul, pe a doua poziție va fi indexul elementului din listă, iar pe a treia/"
+    print("5. Afișarea listei obținute din lista inițială în care numerele sunt înlocuite cu un tuplu în care pe prima"
+          " poziție este numărul, pe a doua poziție va fi indexul elementului din listă, iar pe a treia"
           "poziție apare numărul de apariții a numărului.")
     print("x.Iesire")
 
