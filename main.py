@@ -162,8 +162,8 @@ def main():
                 print("NU")
         elif optiune == "4":
             print(lista_cu_nr_divizori(lst))
-        #elif optiune == "5":
-            #print(tuplu_numar_index_aparitii(lst))
+        # elif optiune == "5":
+            # print(tuplu_numar_index_aparitii(lst))
         elif optiune == "x":
             break
         else:
@@ -173,5 +173,5 @@ def main():
 test_eliminare_nr_prime()
 test_media_aritmetica_n()
 test_numar_divizori_proprii()
-#test_tuplu_numar_index_aparitii()
+# test_tuplu_numar_index_aparitii()
 main()
