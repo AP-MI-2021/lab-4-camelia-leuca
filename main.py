@@ -37,7 +37,7 @@ def media_aritmetica_n(lst, n):
     for numar in lst:
         suma = suma + numar
     media = suma / numarul_elementelor
-    if n >= media:
+    if n <= media:
         return True
     return False
 
@@ -127,8 +127,8 @@ def test_eliminare_nr_prime():
 
 def test_media_aritmetica_n():
     assert media_aritmetica_n([2, 3, 4], 3) is True
-    assert media_aritmetica_n([10, -3, 25, -1, 3, 25, 18], 10) is False
-    assert media_aritmetica_n([1, 1, 4], 10) is True
+    assert media_aritmetica_n([10, -3, 25, -1, 3, 25, 18], 10) is True
+    assert media_aritmetica_n([1, 1, 4], 10) is False
 
 
 def test_numar_divizori_proprii():
