@@ -83,20 +83,20 @@ def numar_aparitii(lst, x):
     return aparitii
 
 
-"""
 def tuplu_numar_index_aparitii(lst):
+    """
     Afișarea listei obținute din lista inițială în care numerele sunt înlocuite cu un tuplu în care peprima/
           " poziție este numărul, pe a doua poziție va fi indexul elementului din listă, iar pe a treia/"
           "poziție apare numărul de apariții a numărului."
     :param lst: o lista de numere intregi
     :return: o liste de tuple in care se regaseste numarul, indexul si numarul de aparitii
+    """
     rezultat = []
-    for i in range(len(lst) - 1):
+    for i in range(len(lst)):
         aparitii = numar_aparitii(lst, lst[i])
         tuplu = (lst[i], i, aparitii)
         rezultat.append(tuplu)
     return rezultat
-"""
 
 
 def citire_lista():
@@ -137,12 +137,10 @@ def test_numar_divizori_proprii():
     assert lista_cu_nr_divizori([1]) == [1, 0]
 
 
-""""
 def test_tuplu_numar_index_aparitii():
-    assert tuplu_numar_index_aparitii([1, 2, 1, 3]) == [(1, 0, 2), (2, 1, 0), (1, 2, 2), (3, 3, 1)]
+    assert tuplu_numar_index_aparitii([1, 2, 1, 3]) == [(1, 0, 2), (2, 1, 1), (1, 2, 2), (3, 3, 1)]
     assert tuplu_numar_index_aparitii([25, 13, 26, 13]) == [(25, 0, 1), (13, 1, 2), (26, 2, 1), (13, 3, 2)]
-    assert tuplu_numar_index_aparitii([2, 1]) == [(2, 0, 1), (1, 2, 1)]
-"""
+    assert tuplu_numar_index_aparitii([2, 1]) == [(2, 0, 1), (1, 1, 1)]
 
 
 def main():
@@ -162,8 +160,8 @@ def main():
                 print("NU")
         elif optiune == "4":
             print(lista_cu_nr_divizori(lst))
-        # elif optiune == "5":
-            # print(tuplu_numar_index_aparitii(lst))
+        elif optiune == "5":
+            print(tuplu_numar_index_aparitii(lst))
         elif optiune == "x":
             break
         else:
@@ -173,5 +171,5 @@ def main():
 test_eliminare_nr_prime()
 test_media_aritmetica_n()
 test_numar_divizori_proprii()
-# test_tuplu_numar_index_aparitii()
+test_tuplu_numar_index_aparitii()
 main()
